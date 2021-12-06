@@ -9,6 +9,9 @@ const CONVAS_SIZE = 700
 canvas.height = CONVAS_SIZE
 canvas.width = CONVAS_SIZE
 
+ctx.fillStyle = 'white'
+ctx.fillRect(0, 0, CONVAS_SIZE, CONVAS_SIZE)
+
 ctx.lineWidth = 2.5
 ctx.strokeStyle = INITIAL_COLOR
 ctx.fillStyle = INITIAL_COLOR
@@ -88,12 +91,18 @@ function handleCanvasClick() {
     }
 }
 
+function handleCM(event) {
+    // console.log(event);
+    event.preventDefault()
+}
+
 if (canvas) {
     canvas.addEventListener('mousemove', onMouseMove)
     canvas.addEventListener('mousedown', onMouseDown)
     canvas.addEventListener('mouseup', stopPainting)
     canvas.addEventListener('mouseleave', stopPainting)
     canvas.addEventListener('click', handleCanvasClick)
+    canvas.addEventListener('contextmenu', handleCM)
 
 }
 
