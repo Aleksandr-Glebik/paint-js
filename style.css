@@ -18,8 +18,8 @@ body {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .controls {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .controls__colors {
@@ -36,25 +36,29 @@ body {
   cursor: pointer;
 }
 .controls__btns {
-    align-self: center;
-    margin-top: 20px;
+  align-self: center;
+  margin-top: 20px;
 }
 .btn {
-    all:unset;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0 5px;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 5px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  all: unset;
+
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
 }
 .btn:hover {
-    background-color: rgb(213, 211, 211);
+  background-color: rgb(213, 211, 211);
 }
 .btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 .controls__range {
-    align-self: center;
-    margin: 20px 0 0;
+  align-self: center;
+  margin: 20px 0 0;
 }
